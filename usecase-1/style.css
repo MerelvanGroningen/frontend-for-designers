@@ -61,6 +61,7 @@ a.active {
 
 body{
 	  background: #191919;
+		overflow-x: hidden; // hide horizontal
 }
 
 h2{
