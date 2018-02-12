@@ -2,11 +2,12 @@
 	font-family: 'Roboto';
   padding: 0;
   margin: 0;
+	outline: 0;
 
 }
 
 h1{
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -17,23 +18,46 @@ h1{
   width: 100%;
   background: #191919;
   display: inline-block;
-  padding: 15px 0px 15px 0px;
+  padding: 30px 0px 30px 0px;
 }
 
 nav{
-	display: flex;
-	justify-content: center;
 	background-color: #ffffff;
-	padding: 10px 0px 10px 0px;
+	width: 100%;
+	height: 60px;
 }
 
-ul {
-	list-style-type:: none;
+nav ul {
+  list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
-/* nav ul li a {
-	display: flex;
-	justify-content: center;
-/* }  */
+
+nav ul li {
+	 display: inline-block;
+	 width: 50%;
+	 margin: -2px;
+	 height: 100%;
+}
+
+nav ul li a {
+	color: #4A4A4A;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	line-height: 65px;
+}
+
+a.active {
+  color: #F5A623;
+}
+
+ .watch {
+	 /* text-align: center; */
+}
 
 body{
 	  background: #191919;
@@ -43,5 +67,71 @@ h2{
 	text-transform: uppercase;
 	color: #ffffff;
 	font-size: 16px;
+	padding: 20px 0px 0px 20px;
+}
+
+.scroll {
+    width: 100%;
+    height: 265px;
+    margin: 20px 10px;
+    background: #191919;
+    overflow: auto;
+}
+
+.scroll ul {
+    float: left;
+    margin-right: -999em;
+    white-space: nowrap;
+    list-style: none;
+}
+
+.scroll li {
+    margin: 10px;
+    text-align: center;
+    float: left;
+    display: inline;
+		position: relative;
+	}
+
+.scroll a {
+    text-decoration: none;
+  	color: #ffffff;
+}
+
+.scroll img {
+    border: 0;
+    display: block;
+		width: 150px;
+		height: 220px;
+		margin-bottom: 8px;
+
 
 }
+
+	div {
+		display: block;
+	}
+
+	#heart{
+		width: 35px;
+		height: 31px;
+		position: absolute;
+		right: 8px;
+		top: 8px;
+	}
+
+/* div img{
+
+					margin: 20px 10px;
+
+	 } */
+
+/* div img:nth-of-type(1){
+	 margin-left: 20px;
+ } */
+
+span {
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 12px;
+	}
