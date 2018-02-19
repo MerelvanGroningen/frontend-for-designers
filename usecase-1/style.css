@@ -120,6 +120,14 @@ h2{
 		right: 8px;
 		bottom: 30px;
 	}
+	img.like{
+		width: 35px;
+		height: 31px;
+		position: absolute;
+		right: 8px;
+		bottom: 30px;
+		display: none;
+	}
 
 /* div img{
 
