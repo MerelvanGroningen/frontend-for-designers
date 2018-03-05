@@ -24,14 +24,42 @@ main{
   background-color: #ffffff;
 }
 
-img{
+
+div div img{
   border-radius: 15px;
   width: 60%;
   margin-left: 300px;
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 125px;
+  overflow: hidden;
+}
+
+.arrowLeft {
+  position: relative;
+  float: left;
+  margin-left: 300px;
+  margin-top: 200px;
+  z-index: 1;
+}
+
+.arrowRight {
+  float: left;
+  margin-top: 200px;
+  position: relative;
+  margin-left: 738px;
+  z-index: 1;
+}
 
 footer{
   height: 100px;
+  position: absolute;
+  top: 750px;
+  width: 100%;
+}
+footer p {
+  font-size: 10px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  text-align: center;
 }
