@@ -3,8 +3,6 @@
   padding: 0;
   margin: 0;
 	outline: 0;
-  box-sizing: border-box;
-
 }
 
 h1{
@@ -13,40 +11,57 @@ h1{
   color: #ffffff;
   font-weight: 100;
   padding: 80px 0px 80px 300px;
-  position: relative;
+
 }
 
 header{
   background-color: #4A4A4A;
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
+body{
+
+}
+
+/* de carousel ! */
 main{
-  background-color: #ffffff;
+  width: 100%;
+  /* overflow-x: hidden; */
+  z-index: 1;
+
 }
 
+section{
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  margin-top:-4rem;
+  z-index: 1;
+  position: absolute;
+  overflow-x: hidden;
+  /* left: 100px; */
+}
 
-div div img{
+main section img{
   border-radius: 15px;
   width: 60%;
-  left: 20%;
+  margin: 10px;
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.4);
-  position: absolute;
   top: 125px;
-  overflow: hidden;
 }
 
+/* navigatie*/
 .arrowLeft {
   position: relative;
   float: left;
-  padding: 0px 10px;
   /* margin-top: 200px; */
   z-index: 1;
 }
 
 .arrowRight {
   float: right;
-  padding: 0px 10px;
   position: relative;
   /* margin-top: 200px; */
   z-index: 1;
