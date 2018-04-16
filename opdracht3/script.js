@@ -69,15 +69,21 @@ function addHeartSelector() {
   // forEach werkt wel, hij pakt hier in de fuctie alle elementen uit de array (je loopt door elke image heen en voegt overal apart die addEventListener toe)
   var images = document.querySelectorAll('.heart');
   images.forEach (function(image) {
-    image.addEventListener('click', function(){
+    image.addEventListener('click', function(event){
       if (image.src.match("heartred")) {
+          image.classList.remove("heart_selected");
           image.src = "img/heartwhite.png";
           watchlist_total--;
       } else {
+          image.classList.add("heart_selected");
           image.src = "img/heartred.png";
           watchlist_total++;
       }
-      document.getElementById('watchlist').innerHTML = "watchlist(" + watchlist_total + ")";
+      document.getElementById('watchlist').innerHTML = "watchlist(<span class='watchlist_number'>" + watchlist_total + "</span>)";
+
+      var watchlist_number = document.querySelector('.watchlist_number');
+      watchlist_number.classList.add("watchlist_number_increase"); //voegt class toe om fontsize te vergroten van nummer watchlist
+      setTimeout(function(){ watchlist_number.classList.remove("watchlist_number_increase"); }, 400); //haalt class weer weg --> verkleinen nummer van watchlist na bepaalde tijd
     });
   });
 }
