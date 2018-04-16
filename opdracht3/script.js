@@ -3,7 +3,7 @@ var watchlist_total = 0;
 var xmlHttpReq = new XMLHttpRequest();
 
 xmlHttpReq.addEventListener("load", reqListener);
-xmlHttpReq.open("GET", "http://dennistel.nl/movies"); //  GET haalt iets van de site af
+xmlHttpReq.open("GET", "https://merelvangroningen.github.io/frontend-for-designers/opdracht3/movies.json"); //  GET haalt iets van de site af
 xmlHttpReq.send();
 
 function reqListener () {
