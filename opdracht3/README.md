@@ -1,5 +1,4 @@
-# opdracht 3
-nog aanpassen
+# Usecase1
 ## Afbeeldingen plaatsen
 
 Ik dacht eerst dat ik elk kopje voor een filmgenre kon volgen met een pharagraph met albeeldingen erin, maar zag al snel dat dit niet werkte zoals ik wilde.

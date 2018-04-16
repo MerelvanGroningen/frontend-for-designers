@@ -24,13 +24,41 @@ function reqListener () {
 
     var img_2 = document.createElement("img");
     img_2.src = obj.cover;
+    img_2.classList.add("cover");
     a.appendChild(img_2);
 
     var span = document.createElement("span");
-    span.textContent = obj.title;
+    span.textContent = obj.title; //textContent ipv src, het is geen img
     a.appendChild(span);
 
-    ul.appendChild(li); //  Eerst de li helemaal vullen en dan pas aan de ul toevoegen
+    li.addEventListener('click', function(){
+      var title = document.getElementById("title");
+      title.textContent = obj.title;
+      var text = document.getElementById("text");
+      text.textContent = obj.simple_plot;
+      var genres = document.getElementById("genres");
+      genres.innerHTML="";
+      obj.genres.forEach(function(item) {
+        var li = document.createElement("li");
+        li.textContent = item;
+        genres.appendChild(li);
+      });
+      var actors = document.getElementById("actors");
+      actors.innerHTML="";
+      // obj.actors.forEach(function(item) {
+      //   var li = document.createElement("li");
+      //   li.textContent = item.actor_name;
+      //   actors.appendChild(li);
+      // });
+      for (var x = 0; x < 3; x++) {
+        var li = document.createElement("li");
+        li.textContent = obj.actors[x].actor_name;
+        actors.appendChild(li);
+      }
+      console.log(obj);
+    });
+
+    ul.appendChild(li); //  Eerst de li helemaal vullen en dan pas aan de ul toevoegen (injecteren)
   });
 
   addHeartSelector();
@@ -53,3 +81,33 @@ function addHeartSelector() {
     });
   });
 }
+
+function nextCover() {
+  var container = document.getElementById('scroll_container');
+  container.scrollLeft += 350;
+}
+function previousCover() {
+  var container = document.getElementById('scroll_container');
+  container.scrollLeft -= 350;
+}
+
+var nextButton = document.querySelector('.arrowRight')
+nextButton.addEventListener('click', function(){
+  nextCover();
+});
+
+var previousButton = document.querySelector('.arrowLeft')
+previousButton.addEventListener('click', function(){
+  previousCover();
+});
+
+document.onkeydown = function() {
+    switch (window.event.keyCode) {
+        case 37:
+        previousCover();
+         break;
+        case 39:
+        nextCover();
+         break;
+    }
+};
