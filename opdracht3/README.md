@@ -2,27 +2,15 @@
 
 ## FFD - opdracht 3
 
-NOG AANPASSEN
-In de tweede les kregen we de volgende opdracht: 
-Werk een functionaliteit uit die je kan bedienen met 'click' en met minimaal één andere user interactie, zoals:
+De laatste opdracht van Frontend for Designers bestond uit de volgende dingen (zie afbeelding hieronder):
+![alt text](pictures/aantekeningen-opdracht-3.png "aantekeningen behorend bij opdracht 3")
 
-- **Het toetsenbord**
-
-- Tap
-
-- Dubbel Click
-
-- Swipe
-
-- Of een ander nuttig event
-
-Ik heb gekozen voor de eerste Event. Hierbij maak ik gebruik van html, css en javascript om een prototype te maken.
-Ik had me voorgenomen om een foto galerij te maken, een soort carousel. 
+Ik heb ervoor gekozen om mijn werk uit opdracht 1 te veranderen en te verbeteren. 
 
 #### Werkwijze
 
 Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet noemen, maar er stond voor mij wel een aantal dingen die me gingen helpen met de code. 
-![alt text](pictures/schets-opdracht2-versie1.png "schets design opdracht 2 versie 2")
+
 
 Daarna heb ik het design in Sketch verder uitgewerkt. De funtie is op desktop gedesigned en uitgewerkt.
 
