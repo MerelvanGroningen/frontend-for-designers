@@ -2,7 +2,7 @@
 
 ## FFD - opdracht 2
 
-In de tweede les kregen we de volgende opdracht: 
+In de derde les kregen we de volgende opdracht: 
 Werk een functionaliteit uit die je kan bedienen met 'click' en met minimaal één andere user interactie, zoals:
 
 - **Het toetsenbord**
