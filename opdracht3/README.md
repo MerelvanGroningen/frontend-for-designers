@@ -8,36 +8,83 @@ De laatste opdracht van Frontend for Designers bestond uit de volgende dingen (z
 Ik heb ervoor gekozen om mijn werk uit opdracht 1 te veranderen en te verbeteren. 
 
 #### Werkwijze !
-[schets behorend bij opdracht 3](pictures/schetsopdracht-3.jpg "schets behorend bij opdracht 3")
 
 Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet noemen, maar er stond voor mij wel een aantal dingen die me gingen helpen met de code. 
+[schets behorend bij opdracht 3](pictures/schetsopdracht-3.png "schets behorend bij opdracht 3")
 
 
-Daarna heb ik het design in Sketch verder uitgewerkt. De funtie is op desktop gedesigned en uitgewerkt.
-
-Ik heb twee versies, de eerste versie heeft geen javascript omdat ik dat niet op die manier aan de praat kreeg. 
-In die versie, te vinden op https://merelvangroningen.github.io/frontend-for-designers/opdracht2/, staan de foto's naast elkaar en zie je dus ook de foto die hierna komen als je op het pijltje klikt (dit werkt dus niet).
-Wat ik hier had moeten doen is in de javascript zeggen dat hij on click, zoveel pixels opzij moet verschuiven. 
-Ik kreeg hier ook de CSS niet helemaal goed, wanneer je de schermresolutie aanpast werd de resolutie van de foto's misvormd. 
-
-Toen ik merkte dat ik dit niet goed kon uitwerken, ging ik weer terug naar mijn oorspronkelijke design, dat er maar 1 foto te zien is in beeld. Mijn HTML en CSS had ik aan het begin van het coderen al zo gemaakt (en toen ging ik over op het idee hierboven), dus kon ik weer snel overschakelen. 
-Alleen stonden in de code de foto's niet naast elkaar en de foto's rechts en links gehide, maar stonden de foto's over elkaar. 
-
-
-![alt text](pictures/design-usecase2.png "design gemaakt in Sketch opdracht 2")
-
+Ik ben gaan kijken wat ik anders wilde in vegelijking tot mijn eerste opdracht. Ik wilde de afbeeldingen van de films groter maken zodat de informatietekst die later uitklapt er netjes onder kon komen te staan in het midden van de gehele pagina. Daarnaast wilde ik ook dat je meer animatie kreeg bij het selecteren van het hartje en dat er meer feedback was voor de gebruiker dat de film ook was toegevoegd aan de watchlist. Ook heb ik een transition toegevoegd wanneer je over een cover hovert. De data heb ik uit een filmdatabase gehaald: Film database(je) - http://dennistel.nl/movies. Op github gezet als movies.json. 
 
 
 #### Javacript
 
-De uiteindelijke versie staat op https://merelvangroningen.github.io/frontend-for-designers/opdracht2-versie2/
-Ik had in eerste instantie de javascript zo gemaakt dat er bij het klikken van het pijltje rechts of links de foto die nu te zien is op display none gaat en de nieuwe foto display block. Dit allemaal in de javascript zelf.
-Dit heb ik in de feedback les veranderd naar een classList die wordt toevoegd in de js naar CSS, met opacity. Zo zie je een snelle overgang tussen de foto's en maak je gebruik van opmaak in de CSS. 
+Naast de gewoonlijke click event heb ik ook nog steeds de mogelijkheid om te verticaal scrollen door de filmlijst en je kunt er door heen met de pijltjes toetsen. De uiteindelijke versie staat [op merelvangroningen.github.io](https://merelvangroningen.github.io/frontend-for-designers/opdracht3/).
+De javascript om de date vanuit een datebase te halen was als je het eenmaal doorhebt goed te doen
 
-Bij onclick, en toestenbord rechter en linker pijltje, ga je door de lengte van een array van foto's heen en tel je bij rechts +1 (++ in de array) en naar links -1 (--) in de images.length. Er zitten nu maar 3 foto's in maar dat kan dus makkelijk aangevuld worden in de html. 
-Als je eenmaal de funtie heb toegevoegd is het niet zo lastig meer om de onKeyDown toe te voegen. Daarbij heeft het mij ook wel geholpen om die dingen op te zoeken. 
+```javascript
+var xmlHttpReq = new XMLHttpRequest();
+
+xmlHttpReq.addEventListener("load", reqListener);
+xmlHttpReq.open("GET", "https://merelvangroningen.github.io/frontend-for-designers/opdracht3/movies.json"); //  GET haalt iets van de site af
+xmlHttpReq.send();
+
+function reqListener () {
+  var json_data = JSON.parse(this.responseText);
+  console.log(json_data);
+
+  json_data.forEach(function(obj) {
+    console.log(obj);
+    var ul = document.getElementById("movie_list");
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    li.appendChild(a);
+
+    var img_heart = document.createElement("img");
+    img_heart.src = "img/heartwhite.png";
+    img_heart.classList.add("heart");
+    a.appendChild(img_heart);
+
+    var img_2 = document.createElement("img");
+    img_2.src = obj.cover;
+    img_2.classList.add("cover");
+    a.appendChild(img_2);
+```
+
 
 #### Geleerd
 
-Dit was al iets complexer dan de eerste opdracht. Ik heb gemerkt dat het heel handig is om goed te kunnen googlen, ook om alles te kunnen begrijpen is het goed om het zelf te schrijven. Ik begrijp nu beter hoe het werkt met een addEventListener en de classList. Er zit nu weer meer logica in voor mij, dan aan het begin van deze course. 
+Deze opdracht was wel een uitdaging, zo is het bijvoorbeeld na proberen niet gelukt om een mooie transitie te doen met het doorklikken naar de volgende film. 
+
+```javascript
+function nextCover() {
+  var container = document.getElementById('scroll_container');
+  container.scrollLeft += 350;
+}
+function previousCover() {
+  var container = document.getElementById('scroll_container');
+  container.scrollLeft -= 350;
+}
+
+var nextButton = document.querySelector('.arrowRight')
+nextButton.addEventListener('click', function(){
+  nextCover();
+});
+
+var previousButton = document.querySelector('.arrowLeft')
+previousButton.addEventListener('click', function(){
+  previousCover();
+});
+
+document.onkeydown = function() {
+    switch (window.event.keyCode) {
+        case 37:
+        previousCover();
+         break;
+        case 39:
+        nextCover();
+         break;
+    }
+};
+```
+Ik heb geprobeerd om gebruik te maken van transform: translate(x), maar kreeg het hiermee niet aan de praat. Ook heb ik gekeken naar behavior: 'smooth', maar ook dat werkte niet op mijn code. Ik kon het verder niet vinden op internet, dus ik heb het hierbij gelaten. 
 
