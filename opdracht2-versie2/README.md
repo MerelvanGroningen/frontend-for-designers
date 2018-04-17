@@ -1,5 +1,5 @@
 
-![alt text](opdracht2/schets-opdrcaht2-versie1.jpg "Eerste schets opdracht2")
+
 ## FFD - opdracht 2
 
 In de tweede les kregen we de volgende opdracht: 
@@ -21,7 +21,7 @@ Ik had me voorgenomen om een foto galerij te maken, een soort carousel.
 #### Werkwijze
 
 Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet noemen, maar er stond voor mij wel een aantal dingen die me gingen helpen met de code. 
-![alt text](pictures/schetsopdracht1.png "schets design opdracht 1")
+![alt text](pictures/schets-opdracht2-versie.png "schets design opdracht 2 versie 2")
 
 Daarna heb ik het design in Sketch verder uitgewerkt. De funtie is op desktop gedesigned en uitgewerkt.
 
@@ -36,7 +36,7 @@ Alleen stonden in de code de foto's niet naast elkaar en de foto's rechts en lin
 
 
 
-![alt text](pictures/designopdracht2.png "design gemaakt in Sketch opdracht 2")
+![alt text](pictures/design-usecase2.png "design gemaakt in Sketch opdracht 2")
 
 
 
