@@ -21,7 +21,7 @@ Ik had me voorgenomen om een foto galerij te maken, een soort carousel.
 #### Werkwijze
 
 Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet noemen, maar er stond voor mij wel een aantal dingen die me gingen helpen met de code. 
-![alt text](pictures/schets-opdracht2-versie.png "schets design opdracht 2 versie 2")
+![alt text](pictures/schets-opdracht2-versie1.png "schets design opdracht 2 versie 2")
 
 Daarna heb ik het design in Sketch verder uitgewerkt. De funtie is op desktop gedesigned en uitgewerkt.
 
