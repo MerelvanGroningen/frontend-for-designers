@@ -29,13 +29,14 @@ In het gemaakte prototype staan op het moment 3 film genres die elk 5 films beva
 
 Ik dacht eerst dat ik elk kopje voor een filmgenre kon volgen met een pharagraph met albeeldingen erin, maar zag al snel dat dit niet werkte zoals ik wilde.
 
-Het dit toen met een unordered list opgevangen in een div. Hierdoor kon ik het anders aanroepen in CSS, waardoor het scrollen mogelijk werd, met behulp van http://www.websitecodetutorials.com/.
+Het dit toen met een unordered list opgevangen in een div. Hierdoor kon ik het anders aanroepen in CSS, waardoor het scrollen mogelijk werd, met behulp van [deze site](http://www.websitecodetutorials.com/).
 
 Ook wat kleine aanpassingen in lettertypen groottes voor goede hierarchie, kloppend bij het design.
 
 #### Javacript
 
-https://merelvangroningen.github.io/frontend-for-designers/usecase-1/lijst.html
+[Hier staat de eerste opdracht:](https://merelvangroningen.github.io/frontend-for-designers/usecase-1/lijst.html "Usecase-1")
+
 Wanneer je op het witte hartje klikt, like je de film en veranderd het hartje naar oranje/rood. Ook zie je bij de tekst Watchlist(0), de '0' veranderen naar een 1 en als je er nog een hartje aanklikt veranderd hij naar 2 enz. Hij telt ook af wanneer je het oranje/rood hartje aanklikt dan unlike je hem. 
 Dit is gemaakt met een variabel watchlist_total die op 0 staat bij binnenkomst van de pagina en alle hartjes staan op wit. Wanneer (if) het hartje rood is dan moet hij onclick wit worden en -1 (--) doen in de watchlist, anders (else) onclick het hartje nog rood maken en 1 optellen bij het aantal in de watchlist. 
 
