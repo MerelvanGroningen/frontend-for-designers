@@ -25,8 +25,9 @@ main{
     background-color: #ffffff;
 }
 
-ul {
-	margin: 0 auto;
+ul {    
+	margin: 20px auto;
+    width: 200px;
 }
 
 a {
