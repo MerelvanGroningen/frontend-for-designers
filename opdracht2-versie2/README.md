@@ -23,7 +23,7 @@ Ik had me voorgenomen om een foto galerij te maken, een soort carousel.
 Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet noemen, maar er stond voor mij wel een aantal dingen die me gingen helpen met de code. 
 ![alt text](pictures/schets-opdracht2-versie1.png "schets design opdracht 2 versie 2")
 
-Daarna heb ik het design in Sketch verder uitgewerkt. De funtie is op desktop gedesigned en uitgewerkt.
+Daarna heb ik het design in Sketch verder uitgewerkt. De funtie is op desktop gedesigned en uitgewerkt, de uiteindelijke versie is ook responsive.
 
 Ik heb twee versies, de eerste versie heeft geen javascript omdat ik dat niet op die manier aan de praat kreeg. 
 In die versie, te vinden op [deze link](https://merelvangroningen.github.io/frontend-for-designers/opdracht2/), staan de foto's naast elkaar en zie je dus ook de foto die hierna komen als je op het pijltje klikt (dit werkt dus niet).
