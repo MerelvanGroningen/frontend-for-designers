@@ -25,9 +25,11 @@ main{
     background-color: #ffffff;
 }
 
-a {
+p a {
 	color: #4A4A4A;	
 	font-size: 16px;
+	text-transform: uppercase;
+   	text-align: center;
 }
 
 
