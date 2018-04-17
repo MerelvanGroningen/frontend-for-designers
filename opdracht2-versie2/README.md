@@ -40,7 +40,7 @@ Alleen stonden in de code de foto's niet naast elkaar en de foto's rechts en lin
 
 #### Javacript
 
-De uiteindelijke versie staat op https://merelvangroningen.github.io/frontend-for-designers/opdracht2-versie2/
+De uiteindelijke versie staat op https://merelvangroningen.github.io/frontend-for-designers/opdracht2-versie2/index.html
 Ik had in eerste instantie de javascript zo gemaakt dat er bij het klikken van het pijltje rechts of links de foto die nu te zien is op display none gaat en de nieuwe foto display block. Dit allemaal in de javascript zelf.
 Dit heb ik in de feedback les veranderd naar een classList die wordt toevoegd in de js naar CSS, met opacity. Zo zie je een snelle overgang tussen de foto's en maak je gebruik van opmaak in de CSS. 
 
