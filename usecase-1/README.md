@@ -35,6 +35,7 @@ Ook wat kleine aanpassingen in lettertypen groottes voor goede hierarchie, klopp
 
 #### Javacript
 
+https://merelvangroningen.github.io/frontend-for-designers/usecase-1/lijst.html
 Wanneer je op het witte hartje klikt, like je de film en veranderd het hartje naar oranje/rood. Ook zie je bij de tekst Watchlist(0), de '0' veranderen naar een 1 en als je er nog een hartje aanklikt veranderd hij naar 2 enz. Hij telt ook af wanneer je het oranje/rood hartje aanklikt dan unlike je hem. 
 Dit is gemaakt met een variabel watchlist_total die op 0 staat bij binnenkomst van de pagina en alle hartjes staan op wit. Wanneer (if) het hartje rood is dan moet hij onclick wit worden en -1 (--) doen in de watchlist, anders (else) onclick het hartje nog rood maken en 1 optellen bij het aantal in de watchlist. 
 
