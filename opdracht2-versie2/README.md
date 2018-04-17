@@ -34,14 +34,20 @@ Toen ik merkte dat ik dit niet goed kon uitwerken, ging ik weer terug naar mijn 
 Alleen stonden in de code de foto's niet naast elkaar en de foto's rechts en links gehide, maar stonden de foto's over elkaar. 
 
 
-
-
 ![alt text](pictures/design-usecase2.png "design gemaakt in Sketch opdracht 2")
 
 
 
 #### Javacript
 
+De uiteindelijke versie staat op https://merelvangroningen.github.io/frontend-for-designers/opdracht2-versie2/
+Ik had in eerste instantie de javascript zo gemaakt dat er bij het klikken van het pijltje rechts of links de foto die nu te zien is op display none gaat en de nieuwe foto display block. Dit allemaal in de javascript zelf.
+Dit heb ik in de feedback les veranderd naar een classList die wordt toevoegd in de js naar CSS, met opacity. Zo zie je een snelle overgang tussen de foto's en maak je gebruik van opmaak in de CSS. 
+
+Bij onclick, en toestenbord rechter en linker pijltje, ga je door de lengte van een array van foto's heen en tel je bij rechts +1 (++ in de array) en naar links -1 (--) in de images.length. Er zitten nu maar 3 foto's in maar dat kan dus makkelijk aangevuld worden in de html. 
+Als je eenmaal de funtie heb toegevoegd is het niet zo lastig meer om de onKeyDown toe te voegen. Daarbij heeft het mij ook wel geholpen om die dingen op te zoeken. 
+
 #### Geleerd
 
+Dit was al iets complexer dan de eerste opdracht. Ik heb gemerkt dat het heel handig is om goed te kunnen googlen, ook om alles te kunnen begrijpen is het goed om het zelf te schrijven. Ik begrijp nu beter hoe het werkt met een addEventListener en de classList. Er zit nu weer meer logica in voor mij, dan aan het begin van deze course. 
 
