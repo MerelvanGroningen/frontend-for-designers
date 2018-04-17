@@ -15,7 +15,7 @@ function reqListener () {
     var ul = document.getElementById("movie_list");
     var li = document.createElement("li");
     var a = document.createElement("a");
-    li.appendChild(a);
+    li.appendChild(a); // onder/in de li zit de a, het kind ervan.
 
     var img_heart = document.createElement("img");
     img_heart.src = "img/heartwhite.png";
@@ -31,7 +31,7 @@ function reqListener () {
     span.textContent = obj.title; //textContent ipv src, het is geen img
     a.appendChild(span);
 
-    li.addEventListener('click', function(){
+    li.addEventListener('click', function(){ //zelfde als hierboven maar dan onclick
       var title = document.getElementById("title");
       title.textContent = obj.title;
       var text = document.getElementById("text");

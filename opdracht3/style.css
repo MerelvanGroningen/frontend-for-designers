@@ -137,7 +137,6 @@ h2{
 	img.heart_selected {
 		width: 70px;
 		height: 62px;
-		transition: all ease 1s;
 	}
 
 	img.heart:hover {
