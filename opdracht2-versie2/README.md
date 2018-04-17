@@ -26,7 +26,7 @@ Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet 
 Daarna heb ik het design in Sketch verder uitgewerkt. De funtie is op desktop gedesigned en uitgewerkt.
 
 Ik heb twee versies, de eerste versie heeft geen javascript omdat ik dat niet op die manier aan de praat kreeg. 
-In die versie, te vinden op https://merelvangroningen.github.io/frontend-for-designers/opdracht2/, staan de foto's naast elkaar en zie je dus ook de foto die hierna komen als je op het pijltje klikt (dit werkt dus niet).
+In die versie, te vinden op [deze link](https://merelvangroningen.github.io/frontend-for-designers/opdracht2/), staan de foto's naast elkaar en zie je dus ook de foto die hierna komen als je op het pijltje klikt (dit werkt dus niet).
 Wat ik hier had moeten doen is in de javascript zeggen dat hij on click, zoveel pixels opzij moet verschuiven. 
 Ik kreeg hier ook de CSS niet helemaal goed, wanneer je de schermresolutie aanpast werd de resolutie van de foto's misvormd. 
 
@@ -40,7 +40,7 @@ Alleen stonden in de code de foto's niet naast elkaar en de foto's rechts en lin
 
 #### Javacript
 
-De uiteindelijke versie staat op https://merelvangroningen.github.io/frontend-for-designers/opdracht2-versie2/index.html
+De uiteindelijke versie staat [hier](https://merelvangroningen.github.io/frontend-for-designers/opdracht2-versie2/index.html).
 Ik had in eerste instantie de javascript zo gemaakt dat er bij het klikken van het pijltje rechts of links de foto die nu te zien is op display none gaat en de nieuwe foto display block. Dit allemaal in de javascript zelf.
 Dit heb ik in de feedback les veranderd naar een classList die wordt toevoegd in de js naar CSS, met opacity. Zo zie je een snelle overgang tussen de foto's en maak je gebruik van opmaak in de CSS. 
 
