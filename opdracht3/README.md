@@ -8,7 +8,7 @@ De laatste opdracht van Frontend for Designers bestond uit de volgende dingen (z
 Ik heb ervoor gekozen om mijn werk uit opdracht 1 te veranderen en te verbeteren. 
 
 #### Werkwijze !
-[alt text](pictures/schetsopdracht-3.jpg "schets behorend bij opdracht 3")
+[schets behorend bij opdracht 3](pictures/schetsopdracht-3.jpg "schets behorend bij opdracht 3")
 
 Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet noemen, maar er stond voor mij wel een aantal dingen die me gingen helpen met de code. 
 
