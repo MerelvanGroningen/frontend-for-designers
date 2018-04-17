@@ -25,6 +25,10 @@ main{
     background-color: #ffffff;
 }
 
+ul {
+	margin: 0 auto;
+}
+
 a {
 	color: #4A4A4A;	
 	font-size: 16px;
@@ -42,9 +46,11 @@ a {
  footer p {
 	 position: fixed;
 	 bottom: 0;
-   font-size: 10px;
-   color: #4a4a4a;
-   text-transform: uppercase;
-   text-align: center;
+   	 font-size: 10px;
+  	 color: #4a4a4a;
+  	 text-transform: uppercase;
+  	 text-align: center;
 	 width: 100%;
+	 margin-bottom: 20px;
+	 
   }
