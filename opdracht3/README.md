@@ -3,11 +3,12 @@
 ## FFD - opdracht 3
 
 De laatste opdracht van Frontend for Designers bestond uit de volgende dingen (zie afbeelding hieronder):
-![alt text](pictures/aantekeningen-opdracht-3.png "aantekeningen behorend bij opdracht 3")
+![aantekeningen behorend bij opdracht 3](pictures/aantekeningen-opdracht-3.jpg "aantekeningen behorend bij opdracht 3")
 
 Ik heb ervoor gekozen om mijn werk uit opdracht 1 te veranderen en te verbeteren. 
 
-#### Werkwijze
+#### Werkwijze !
+[alt text](pictures/schetsopdracht-3.jpg "schets behorend bij opdracht 3")
 
 Ik heb eerst een schets gemaakt van mijn design, echt technisch kun je hem niet noemen, maar er stond voor mij wel een aantal dingen die me gingen helpen met de code. 
 
